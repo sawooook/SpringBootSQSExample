@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    include:
+      - aws
+
+cloud:
+  aws:
+    sqs:
+      queue:
+        url: https://sqs.us-east-2.amazonaws.com/266238301141/SQS-Study
+    region:
+      static: us-east-2
+    credentials:
+      instance-profile: true
+    stack:
+      auto: false
